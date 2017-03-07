@@ -1,0 +1,110 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 18, 2017, 11:15:38 AM
+    Author     : Fizz Buzz
+*/
+
+body {
+    font-family:  Arial, sans-serif;
+    color: #666;
+    background: #EEEEEE;
+    margin: 0px;
+}
+
+svg {
+    overflow: visible;
+    vertical-align: top;
+}
+
+#headerAndConfiguration {
+    padding-left: 1em;
+    position: fixed;
+    height: 7vh;
+    min-height: 45px;
+    max-height: 45px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px;
+}
+
+#headerAndConfiguration li {
+    font-weight: 600;
+    margin-top: 0.87em;
+    margin-right: 2em;
+    display: inline-block;
+    float: left;
+}
+
+.wrapPanel{
+    height: 88.5vh;
+    width: 100vw;
+    background: transparent;
+}
+
+.wrapGraph{
+    color: #000;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-bottom: 0.5vh;
+    float: left;
+    height: 100%;
+    width: 60vw;
+    max-width: 80vw;
+    min-width: 30vw;
+    background: transparent;
+}
+
+.wrapGraph, #wrapRightPanel {
+    margin-top: 55px;
+}
+
+#wrapRightPanel {
+    margin-top: 55px;
+    float: right;
+    height: 100%;
+    max-height: 87vh;
+    width: 100vw;
+}
+ #wrapRightPanel #wrapDetails, #wrapRightPanel #wrapTestDriver{
+    max-height: 67vh;
+    margin-left: 0.5vw;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
+}
+
+#wrapRightPanel #wrapDetails{
+    height: auto;
+    background: #fff;
+}
+
+#wrapDetails .detailsTable {
+    border-spacing: 0px;
+    width: 100%;
+    text-align: left;
+    
+}
+
+#wrapDetails .detailsTableHeader {
+    padding: 10px;
+    border-right: 1px solid #EEE;
+}
+
+#wrapDetails .detailsTable tr td {
+    padding: 5px;
+    border-top: 1px solid #EEE;
+    border-right: 1px solid #EEE;
+}
+
+
+#wrapRightPanel #wrapTestDriver{
+    height: 50%;
+    background: #fff;
+}
+
+
+
