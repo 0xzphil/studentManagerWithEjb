@@ -4,10 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Fizz%20Buzz/Documents/NetBeansProjects/CURDwithEJB/CURDwithEJB-war/web/com.studentWeb/mainStudent.xhtml</file>
-            <file>file:/C:/Users/Fizz%20Buzz/Documents/NetBeansProjects/CURDwithEJB/CURDwithEJB-war/web/index.html</file>
+            <file>file:/C:/Users/Fizz%20Buzz/Documents/NetBeansProjects/CURDwithEJB/CURDwithEJB-war/web/resources/js/showInfo.js</file>
             <file>file:/C:/Users/Fizz%20Buzz/Documents/NetBeansProjects/CURDwithEJB/CURDwithEJB-war/web/resources/css/style.css</file>
-            <file>file:/C:/Users/Fizz%20Buzz/Documents/NetBeansProjects/CURDwithEJB/CURDwithEJB-war/src/java/com/studentWeb/MB/studentMB.java</file>
+            <file>file:/C:/Users/Fizz%20Buzz/Documents/NetBeansProjects/CURDwithEJB/CURDwithEJB-war/web/resources/jslib/jquery.min.js</file>
             <file>file:/C:/Users/Fizz%20Buzz/Documents/NetBeansProjects/CURDwithEJB/CURDwithEJB-war/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/Fizz%20Buzz/Documents/NetBeansProjects/CURDwithEJB/CURDwithEJB-war/web/resources/jslib/jqueryUI.js</file>
         </group>
     </open-files>
 </project-private>

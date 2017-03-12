@@ -2,14 +2,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml "
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:f="http://java.sun.com/jsf/core" >
+      xmlns:f="http://java.sun.com/jsf/core" 
+      xmlns:p="http://primefaces.org/ui">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <h:head>
         <title>Sinh viên Browser</title>
         <h:outputStylesheet library="css" name="style.css"></h:outputStylesheet>
-        <h:outputScript library="jslib" name="interactjs.js"></h:outputScript>
-        <h:outputScript library="js" name="resizePanel.js"></h:outputScript>
+        <h:outputScript library="jslib" name="jquery.min.js"></h:outputScript>
+        <h:outputScript library="jslib" name="j2lib.js"></h:outputScript>
+        <h:outputScript library="jslib" name="jqueryUI.js"></h:outputScript>
+        <h:outputScript library="js" name="showInfo.js"></h:outputScript>
     </h:head>
     <h:body>
     
@@ -29,7 +32,7 @@
                     rowClasses="detailsTableOddRow">
                     <h:column>    				
                        <f:facet name="header">ID</f:facet>  
-                       <h:outputText value="#{student.id}" />   
+                       <h:outputText value="#{student.id}" styleClass="studentId" />   
                     </h:column>
                     <h:column>
                        <f:facet name="header">Tên sinh viên</f:facet>
@@ -39,31 +42,42 @@
                        <f:facet name="header">Mã sinh viên</f:facet>
                        <h:outputText value="#{student.msv}" />
                     </h:column>
-                    <h:column>
-                       <f:facet name="header">Giới tính</f:facet>
-                       <h:outputText value="#{student.sex}" />
-                    </h:column>
-                    <h:column>
-                       <f:facet name="header">Ngày sinh</f:facet>
-                       <h:outputText value="#{student.dateOfBirth}" />
-                    </h:column>
-                    <h:column>
-                       <f:facet name="header">Quê quán</f:facet>
-                       <h:outputText value="#{student.qq}" />
-                    </h:column>
-                    <h:column>
-                       <f:facet name="header">Email</f:facet>
-                       <h:outputText value="#{student.email}" />
-                    </h:column>
-                    <h:column>
-                       <f:facet name="header">Số điện thoại</f:facet>
-                       <h:outputText value="#{student.phoneNumber}" />
-                    </h:column>
+                    
                  </h:dataTable>
             </h:panelGroup>
         </h:panelGroup>
         
     </h:panelGroup>
+        <p:dialog id="dialog3" header="Thông tin sinh viên" widgetVar="dlg3" showEffect="explode" hideEffect="bounce" height="230" width="600">
+            <h:panelGroup layout="block">
+            <h:outputText value="Name" />
+            <h:outputText styleClass="wrapOddData" id="nameModal" value="Name" />
+            </h:panelGroup> <br />
+            <h:panelGroup layout="block">
+            <h:outputText value="Mã sinh viên" />
+            <h:outputText styleClass="wrapOddData" id="msvModal" value="Name" />
+            </h:panelGroup><br />
+            <h:panelGroup layout="block">
+            <h:outputText value="giới tính" />
+            <h:outputText styleClass="wrapOddData" id="sexModal" value="Name" />
+            </h:panelGroup><br />
+            <h:panelGroup layout="block">
+            <h:outputText value="Ngày sinh" />
+            <h:outputText styleClass="wrapOddData" id="dobModal" value="Name" />
+            </h:panelGroup><br />
+            <h:panelGroup layout="block">
+            <h:outputText value="Quê quán" />
+            <h:outputText styleClass="wrapOddData" id="qqModal" value="Name" />
+            </h:panelGroup><br />
+            <h:panelGroup layout="block">
+            <h:outputText value="Email" />
+            <h:outputText styleClass="wrapOddData" id="emailModal" value="Name" />
+            </h:panelGroup><br />
+            <h:panelGroup layout="block">
+            <h:outputText value="Số điện thoại" />
+            <h:outputText styleClass="wrapOddData" id="sdtModal" value="Name" />
+            </h:panelGroup><br />
+        </p:dialog>
          </h:body>
 </html>
 
